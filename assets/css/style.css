@@ -5,7 +5,7 @@ header{
     justify-content: space-between;
     padding: 1.5rem 10%;
     align-items: center;
-    box-shadow: 0rem 0.4rem 0.5rem rgba(0,0,0,0.25);
+    box-shadow: 0rem 0.2rem 0.8rem rgba(0,0,0,0.25);
 }
 
 header .logo{
@@ -341,7 +341,11 @@ h1 span{
     font-weight: 500;
 }
 
-.proInfBoard a{
+.proInfBoard .viettelLink{
+    font-size: 1.8rem;
+}
+
+.proInfBoard .container>a{
     font-size: 1.8rem;
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
@@ -359,4 +363,111 @@ h1 span{
 .proInfBoard a i{
     font-size: 1.6rem;
     margin-left: 0.5rem;
+}
+
+.morePro {
+    font-size: 1.8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.morePro .bx-chevrons-right{
+    font-size: 2.4rem;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5 ;
+    animation: arrowRight 1s infinite alternate ease-in-out;
+}
+
+.morePro .bx-chevrons-left{
+    font-size: 2.4rem;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5 ;
+    animation: arrowLeft 1s infinite alternate ease-in-out;
+}
+
+@keyframes arrowRight {
+    from{
+        transform: translateX(-1rem);
+    }
+    to{
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes arrowLeft {
+    from{
+        transform: translateX(1rem);
+    }
+    to{
+        transform: translateX(0rem);
+    }
+}
+
+.products hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+/* ------ SERVICE --------- */
+
+.services{
+    padding: 5%;
+}
+
+.services h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.services h3>i{
+    font-size: 2.8rem;
+    margin-left: 0.5rem;
+}
+
+.services .listSer .container .service{
+    box-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.25); 
+    border-radius: 1rem;
+    padding: 5%;
+    margin: 2.5rem 0;
+
+}
+
+.services .listSer .container .service .serLeft{
+    display: flex;
+    justify-content: center;
+}
+
+.services .listSer .container .service .serLeft img {
+    height: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.services .listSer .container .service .serRight h5{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.services .listSer .container .service .serRight p{
+    font-size: 1.8rem;
+    text-align: justify;
+    color: #8B8B8B;
+}
+
+.services hr{
+    width: 90%;
+    margin: 5rem auto;
 }
