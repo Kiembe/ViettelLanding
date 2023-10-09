@@ -1,0 +1,32 @@
+@media screen and (max-height: 750px) {
+    .imgBanner{
+        background-size: calc(100% - 20%);
+        background-position: left bottom;
+        
+    }
+
+    h1{
+        color: #fff;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        padding: 0 2%;
+        text-align: center;
+        font-family: 'MgB';
+        -webkit-text-stroke: 0.25rem var(--primary-color);
+    }
+    
+    h1 span{
+        font-size: 3rem;
+    }
+    
+    .banner p{
+        font-size: 1.6rem;
+        
+    }
+    
+    .banner a{
+        font-size: 2.2rem;
+        padding: 0 3rem;
+        max-width: 75%;
+    }
+}

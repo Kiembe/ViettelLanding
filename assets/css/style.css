@@ -1,0 +1,155 @@
+/* Header CSS */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10%;
+    align-items: center;
+    box-shadow: 0rem 0.4rem 0.5rem rgba(0,0,0,0.25);
+}
+
+header #logo{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+header #menu {
+    font-size: 3.5rem;
+    padding: 0;
+    line-height: 0;
+    color: #4A4949;
+}
+
+/* ---------- BANNER CSS ----------- */
+
+.banner{
+    height: calc(100vh - 5.36rem);
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.topBanner {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #fff,#fff,#fff,#fff,#fff,#fff,#fff,#fff, #be0129);
+    border-bottom: 1px solid #be0129;
+    /* padding: 5% 0; */
+}
+
+h1{
+    color: #fff;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    padding: 0 2%;
+    text-align: center;
+    font-family: 'MgB';
+    -webkit-text-stroke: 0.25rem var(--primary-color);
+}
+
+h1 span{
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    -webkit-text-stroke: 0;
+}
+
+.banner p{
+    font-size: 1.8rem;
+    color: #8B8B8B;
+    font-family: 'roboto' ;
+    text-align: justify;
+    padding: 5%;
+    /* margin: 2rem; */
+}
+
+.banner a{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 0 4rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0,0,0,0.25);
+    line-height: 6.36rem;
+    max-width: 75%;
+}
+
+.bottomBanner{
+    height: 50%;
+    padding: 5% 0;
+    position: relative;
+    border-bottom: 1px solid var(--primary-color);
+    border-top: 1px solid #be0129;
+    background: url(../image/frameVT.png) no-repeat;
+    background-size: cover;
+}
+
+.imgBanner{
+    width: 100%;
+    height: 100%;
+    background: url(../image/bannerV.png) no-repeat left bottom;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    z-index: 2;
+    /* background-attachment: fixed; */
+}
+
+/* .banner img{
+    max-width: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-attachment: fixed;
+} */
+
+
+.bannerBackground {
+    width: 90%;
+    height: 20rem;
+    background-color: #ffffff87;
+    position: absolute;
+    left: -5%;
+    z-index: 1;
+    border-radius: 0rem 2rem 2rem 0rem;
+    transform: rotate(-8deg);
+    bottom: 10rem;
+    opacity: 0.85;
+    background-attachment: fixed;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.55);
+    backdrop-filter: blur(10rem);
+}
+
+.bannerBackground::after {
+    content: ' ';
+    width: 110%;
+    height: 20rem;
+    position: absolute;
+    left: -5%;
+    border-radius: 0rem 2rem 2rem 0rem;
+    /* transform: rotate(-8deg); */
+    bottom: -5rem;
+    opacity: 0.9;
+    background: url(../image/frameVT.png) no-repeat;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: 1rem 0.5rem 0.5rem rgba(177, 170, 170, 0.55);
+}
+
+/* --------- CONTENT ---------- */
+
+.content .container{
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 5%;
+}
+
+.content .container p{
+    font-size: 3.4rem;
+}

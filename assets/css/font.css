@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "MgB";
+    src: url("/assets/fonts/Magistral/FS_Magistral-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgBI";
+    src: url("/assets/fonts/Magistral/FS_Magistral-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgBook";
+    src: url("/assets/fonts/Magistral/FS_Magistral-Book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgBookItalic";
+    src: url("/assets/fonts/Magistral/FS_Magistral-BookItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgEB";
+    src: url("/assets/fonts/Magistral/FS_Magistral-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgEBI";
+    src: url("/assets/fonts/Magistral/FS_Magistral-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgL";
+    src: url("/assets/fonts/Magistral/FS_Magistral-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgLI";
+    src: url("/assets/fonts/Magistral/FS_Magistral-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgMe";
+    src: url("/assets/fonts/Magistral/FS_Magistral-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MgMeI";
+    src: url("/assets/fonts/Magistral/FS_Magistral-MediumItalic.ttf") format("truetype"); 
+}
