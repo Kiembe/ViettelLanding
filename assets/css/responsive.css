@@ -1,6 +1,7 @@
 @media screen and (max-height: 750px) {
     .imgBanner{
         background-size: calc(100% - 20%);
+        -webkit-background-size:calc(100%);
         background-position: left bottom;
         
     }
@@ -28,5 +29,9 @@
         font-size: 2.2rem;
         padding: 0 3rem;
         max-width: 75%;
+    }
+
+    .listPro .prod {
+        margin: 5% 0;
     }
 }

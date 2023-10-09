@@ -38,8 +38,8 @@ header #menu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #fff,#fff,#fff,#fff,#fff,#fff,#fff,#fff, #be0129);
-    border-bottom: 1px solid #be0129;
+    /* background: linear-gradient(to bottom, #fff,#fff,#fff,#fff,#fff,#fff,#fff,#fff, #be0129); */
+    /* border-bottom: 1px solid #be0129; */
     /* padding: 5% 0; */
 }
 
@@ -85,9 +85,10 @@ h1 span{
     padding: 5% 0;
     position: relative;
     border-bottom: 1px solid var(--primary-color);
-    border-top: 1px solid #be0129;
-    background: url(../image/frameVT.png) no-repeat;
+    /* border-top: 1px solid #be0129; */
+    /* background: url(../image/frameVT.png) no-repeat; */
     background-size: cover;
+    
 }
 
 .imgBanner{
@@ -99,7 +100,7 @@ h1 span{
     left: 0;
     bottom: 0rem;
     z-index: 2;
-    /* background-attachment: fixed; */
+    
 }
 
 /* .banner img{
@@ -107,14 +108,14 @@ h1 span{
     left: 0;
     bottom: 0;
     position: absolute;
-    background-attachment: fixed;
+    
 } */
 
 
 .bannerBackground {
     width: 90%;
     height: 20rem;
-    background-color: #ffffff87;
+    background-color: rgb(251, 117, 117);
     position: absolute;
     left: -5%;
     z-index: 1;
@@ -122,9 +123,9 @@ h1 span{
     transform: rotate(-8deg);
     bottom: 10rem;
     opacity: 0.85;
-    background-attachment: fixed;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.55);
     backdrop-filter: blur(10rem);
+
 }
 
 .bannerBackground::after {
@@ -145,11 +146,212 @@ h1 span{
 
 /* --------- CONTENT ---------- */
 
-.content .container{
-    border-radius: 1rem 1rem 0rem 0rem;
+.products .container{
     padding: 5%;
+    
 }
 
-.content .container p{
-    font-size: 3.4rem;
+.products .container h3{
+    font-size: 2.4rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin: 5% 0rem;
+}
+
+.products .container h3>i{
+    font-size: 2.8rem;
+}
+
+.listPro .prod {
+    margin: 10% 0;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0,0,0,0.25);
+}
+
+.listPro .prod .prodContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.listPro .prod .prodContainer .prodLeft{
+    width: 60%;
+}
+
+.listPro .prod .proTitle{
+    color: #fff;
+    font-size: 2.4rem;
+    background: var(--primary-color);
+    padding: 2% 5%;
+    border-radius: 1rem 1rem 0rem 0rem;
+
+}
+
+.listPro .prod .prodContainer .prodLeft .proInf{
+    padding: 5%;
+    text-transform: capitalize;
+    width: 100%;
+    
+}
+
+.listPro .prod .prodContainer .prodLeft .proInf li{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #666666;
+
+}
+
+.listPro .prod .prodContainer .prodLeft .proInf li:last-child{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.listPro .prod .prodContainer .prodLeft .proInf li span{
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #FF8C00;
+}
+
+.listPro .prod .prodContainer .prodRight{
+    width: 40%;
+}
+
+.prodRight .proAct{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7%;
+}
+
+.prodRight .proAct a{
+    font-size: 1.8rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.prodRight .proAct a i{
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+}
+
+.prodRight .proAct button {
+    border: 2px solid var(--primary-color);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    outline: none;
+    background: inherit;
+    font-size: 1.8rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem ;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.prodRight .proAct button i{
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+}
+
+/*  */
+
+.proInfBoard{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    bottom: -100%;
+    left: 0;
+    padding: 5%;
+    backdrop-filter: blur(0.5rem);
+    
+    transition: all 0.5s ease;
+}
+
+.proInfBoard.active{
+    /* display: block; */
+    transition: all 0.5s ease-in-out;
+    bottom: 0;
+    background-color: #928f8f8c;   
+}
+
+.proInfBoard .container{
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem 1rem 0rem 0rem;
+    box-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.25);
+}
+
+.proInfBoard .container>h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.proInfBoard .container>h5 i{
+    font-size: 4rem;
+
+}
+
+.proInfBoard ul li{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1%;
+
+}
+
+.proInfBoard ul li span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #008000;
+}
+
+.proInfBoard ul li .sytax{
+    color: #FF8C00;
+    font-weight: 500;
+}
+
+.proInfBoard a{
+    font-size: 1.8rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.proInfBoard a i{
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
 }
