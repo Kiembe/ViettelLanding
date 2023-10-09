@@ -2,6 +2,7 @@
     --primary-color: #EF0032;
 }
 
+@import url(../css/font.css);
 
 *{
     margin: 0;
@@ -9,8 +10,8 @@
     box-sizing: border-box;
     font-size: 62.5% ;
     list-style: none;
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
-    font-family: 'MgB';
 
 }
 
@@ -19,7 +20,15 @@ html{
 }
 
 body{
-    max-width: 480px;
     overflow-x: hidden;
+    
+}
+
+.wrapper {
+    display: flex;
+    max-width: 480px;
+    margin: 0 auto;
+    overflow-x: hidden;
+
 }
 
