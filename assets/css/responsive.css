@@ -35,3 +35,27 @@
         margin: 5% 0;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .morePro{
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .prodRight .proAct button{
+        font-size: 1.6rem;
+    }
+
+    .prodRight .proAct a{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #CTA {
+        font-size: 2rem;
+        padding: 0 3rem;
+    }
+}

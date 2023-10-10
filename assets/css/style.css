@@ -479,8 +479,7 @@ h1 span{
 
 .products hr{
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
 }
 
 /* ------ SERVICE --------- */
@@ -537,5 +536,168 @@ h1 span{
 
 .services hr{
     width: 90%;
+    margin: 5rem auto 3rem;
+}
+
+/* ------------- F&Q -------------- */
+
+#acodiants{
+    padding: 5.5%;
+}
+
+#acodiants h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#acodiants h3>i{
+    font-size: 2.8rem;
+    margin-left: 0.5rem;
+}
+
+.acodiant {
+    padding: 5%;
+    box-shadow: 0rem 0rem 0.5rem rgba(0,0,0,0.25);
+    border-radius: 1rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    margin: 5% 0;
+}
+
+.acodiant.active{
+    border: 1px solid var(--primary-color);
+}
+
+.acodiant.active .acodianHead>i{
+    transform: rotate(180deg);
+}
+
+.acodiant .acodianHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.acodiant .acodianHead h5{
+    font-size: 2rem;
+    color: #4A4949;
+}
+
+.acodiant .acodianHead>i{
+    font-size: 3rem;
+    padding: 0 2%;
+    color: var(--primary-color);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.acodiant .acodiantContent{
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.acodiant .acodiantContent .acodiantInner{
+    position: absolute;
+    padding-top: 2%;
+
+}
+
+.acodiant .acodiantContent .acodiantInner p{
+    font-size: 1.6rem;
+}
+
+.acodiant .acodiantContent .acodiantInner span{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.acodiant .acodiantContent .acodiantInner .note{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.acodiant .acodiantContent .acodiantInner a{
+    font-size: 1.6rem;
+
+}
+
+#acodiants hr{
+    width: 90%;
     margin: 5rem auto;
+}
+
+/* ---------- FOOTER ------------ */
+
+footer{
+    background: #e3e1e18e;
+    padding: 10% 5% 5%;
+}
+
+footer .logo{
+    height: 2rem;
+}
+
+footer .infor{
+    margin: 1rem 0;
+}
+
+footer .infor li{
+    font-size: 1.6rem;
+    color: #666666;
+}
+
+footer .qrCode{
+    margin: 1.5rem 0;
+}
+
+footer .qrCode h5{
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .qrCode p{
+    font-size: 1.6rem;
+    color: #666666;
+    margin: 1rem 0;
+}
+
+footer .qrCode a{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+footer .cskh h5{
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .cskh ul{
+    margin: 1rem 0;
+}
+
+footer .cskh ul li{
+    font-size: 1.6rem;
+    color: #666666;
+}
+
+footer>p{
+    font-size: 1.4rem;
+    color: #8B8B8B;
+    padding-top: 2%;
+}
+
+footer p>a{
+    font-size: 1.4rem;
 }
