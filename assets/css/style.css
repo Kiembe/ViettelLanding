@@ -716,6 +716,7 @@ footer p>a{
     align-items: center;
     justify-content: center;
     transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
 }
 
 .loader.hidden{
@@ -731,6 +732,7 @@ footer p>a{
     border-top: 1rem solid var(--primary-color);
     border-radius: 50%;
     animation: loader 1s ease infinite;
+    -webkit-animation: loader 1s ease infinite ;
 }
 
 @keyframes loader{
