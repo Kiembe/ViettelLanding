@@ -565,6 +565,7 @@ h1 span{
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     margin: 5% 0;
+    border: 1px solid #fff;
 }
 
 .acodiant.active{
